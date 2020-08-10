@@ -1,7 +1,7 @@
-﻿<Project Sdk="Microsoft.NET.Sdk" InitialTargets="DownloadScannerCli">
+<Project Sdk="Microsoft.NET.Sdk" InitialTargets="DownloadScannerCli">
 
   <PropertyGroup>
-    <TargetFrameworks>$(ScannerNetFxVersion);$(ScannerNetCoreAppVersion);$(ScannerNetCoreGlobalToolVersion)</TargetFrameworks>
+    <TargetFrameworks>$(ScannerNetFxVersion);$(ScannerNetCoreAppVersion);$(ScannerNetCoreGlobalToolVersion);$(ScannerNetVersion)</TargetFrameworks>
     <!-- OutputPath is required by the Clean and Rebuild tasks -->
     <OutputPath>bin\$(Configuration)\</OutputPath>
   </PropertyGroup>

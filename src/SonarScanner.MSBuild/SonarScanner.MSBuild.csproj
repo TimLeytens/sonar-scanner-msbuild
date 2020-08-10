@@ -1,6 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFrameworks>$(ScannerNetCoreAppVersion);$(ScannerNetFxVersion);$(ScannerNetCoreGlobalToolVersion)</TargetFrameworks>
+    <TargetFrameworks>$(ScannerNetCoreAppVersion);$(ScannerNetFxVersion);$(ScannerNetCoreGlobalToolVersion);$(ScannerNetVersion)</TargetFrameworks>
     <AssemblyName>SonarScanner.MSBuild</AssemblyName>
     <OutputType>Exe</OutputType>
   </PropertyGroup>

@@ -27,8 +27,10 @@ All release notes for SonarScanner .Net Core can be found on the GitHub site - h
   <files>
     <file src="..\..\DeploymentArtifacts\BuildAgentPayload\$configuration$\netcoreapp2.1\" target="tools\netcoreapp2.1\any" />
     <file src="..\..\DeploymentArtifacts\BuildAgentPayload\$configuration$\netcoreapp3.0\" target="tools\netcoreapp3.0\any" />
+    <file src="..\..\DeploymentArtifacts\BuildAgentPayload\$configuration$\net5.0\" target="tools\net5.0\any" />
     <file src="DotnetToolSettings.xml" target="tools\netcoreapp2.1\any\DotnetToolSettings.xml" />
     <file src="DotnetToolSettings.xml" target="tools\netcoreapp3.0\any\DotnetToolSettings.xml" />
+    <file src="DotnetToolSettings.xml" target="tools\net5.0\any\DotnetToolSettings.xml" />
     <file src="..\..\License.txt" target="License.txt" />
   </files>
 </package>
