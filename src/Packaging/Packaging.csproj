@@ -66,8 +66,6 @@
   <!-- NetFx specific -->
   <ItemGroup Condition=" '$(TargetFramework)' == '$(ScannerNetFxVersion)' ">
     <!-- Additional project dependencies -->
-    <ProjectReference Include="$(SourcesRoot)\SonarQube.Old.Bootstrapper\SonarQube.Old.Bootstrapper.csproj" />
-    <ProjectReference Include="$(SourcesRoot)\SonarQube.Bootstrapper\SonarQube.Bootstrapper.csproj" />
     <ProjectReference Include="$(SourcesRoot)\SonarScanner.MSBuild.TFS.Classic\SonarScanner.MSBuild.TFS.Classic.csproj" />
 
     <!-- Third-parties dlls -->
@@ -77,8 +75,6 @@
 
     <!-- Entry points -->
     <ScannerFiles Include="$(SourcesRoot)\SonarScanner.MSBuild\bin\$(Configuration)\$(ScannerNetFxVersion)\SonarScanner.MSBuild.exe" />
-    <ScannerFiles Include="$(SourcesRoot)\SonarQube.Bootstrapper\bin\$(Configuration)\$(ScannerNetFxVersion)\SonarQube.Scanner.MSBuild.exe" />
-    <ScannerFiles Include="$(SourcesRoot)\SonarQube.Old.Bootstrapper\bin\$(Configuration)\$(ScannerNetFxVersion)\MSBuild.SonarQube.Runner.exe" />
 
     <!-- XAML Support (only for "classic" .NET Framework). -->
     <ScannerFiles Include="$(SourcesRoot)\SonarScanner.MSBuild.TFS.Classic\bin\$(Configuration)\$(ScannerNetFxVersion)\SonarScanner.MSBuild.TFS.Classic.dll" />
