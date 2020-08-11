@@ -51,12 +51,11 @@ stages:
         inputs:
           key: maven | pom.xml
           path: $(MAVEN_CACHE_FOLDER)
-      - task: NuGetCommand@2
-        displayName: 'NuGet restore'
+      - task: DotNetCoreCLI@2
         inputs:
           command: 'restore'
-          restoreSolution: '$(solution)'
-          feedsToUse: 'select'
+          projects: '**/*.sln'
+        feedsToUse: 'select'
       - task: DownloadSecureFile@1
         name: snk
         inputs:
