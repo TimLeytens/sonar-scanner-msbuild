@@ -55,7 +55,7 @@ stages:
         inputs:
           command: 'restore'
           projects: '**/*.sln'
-        feedsToUse: 'select'
+          feedsToUse: 'select'
       - task: DownloadSecureFile@1
         name: snk
         inputs:
