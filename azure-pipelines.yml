@@ -82,7 +82,10 @@ stages:
             Write-Host "Sonar project version is '${sonarProjectVersion}'"
             # Set the variable to it can be used by other tasks
             Write-Host "##vso[task.setvariable variable=SONAR_PROJECT_VERSION]$sonarProjectVersion"
-            ls $env:LOCALAPPDATA\Microsoft\VisualStudio
+            $path = Get-ChildItem -Path $env:LOCALAPPDATA\Microsoft\VisualStudio -Filter "16.0_*"
+            $pathName = $path.FullName
+            $filePath = Join-Path -Path $pathName -ChildPath "sdk.txt"
+            Set-Content -Path $filePath -Value "UsePreviews=True" -Force
       - task: VSBuild@1
         displayName: 'Set BranchName, Sha1 and BuildNumber properties from Azdo pipeline variables'
         inputs:
