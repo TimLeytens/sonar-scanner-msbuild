@@ -43,9 +43,9 @@ stages:
       steps:
       - checkout: self
       - task: NuGetToolInstaller@1
-        displayName: 'Use NuGet 5.3.1'
+        displayName: 'Use NuGet 5.7.0-preview4'
         inputs:
-          versionSpec: '5.3.1'
+          versionSpec: '5.7.0-preview4'
       - task: CacheBeta@0
         displayName: Cache Maven local repo
         inputs:
