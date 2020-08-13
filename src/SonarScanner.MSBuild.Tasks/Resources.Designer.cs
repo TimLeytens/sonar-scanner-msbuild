@@ -19,7 +19,7 @@ namespace SonarScanner.MSBuild.Tasks {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class Resources {
@@ -294,6 +294,15 @@ namespace SonarScanner.MSBuild.Tasks {
         internal static string WPIF_FailedToResolvePath {
             get {
                 return ResourceManager.GetString("WPIF_FailedToResolvePath", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to No ProjectGuid has been found in neither the csproj nor the solution (Project {0}). Generating a random one..
+        /// </summary>
+        internal static string WPIF_GeneratingRandomGuid {
+            get {
+                return ResourceManager.GetString("WPIF_GeneratingRandomGuid", resourceCulture);
             }
         }
         
